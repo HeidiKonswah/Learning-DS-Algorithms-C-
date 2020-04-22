@@ -1,0 +1,22 @@
+// declaration
+
+#include <string.h>
+using namespace std;
+class Person {
+    
+    private:
+        string firstName;
+        string lastName; 
+        int age; 
+    public: 
+        string getName();
+        Person(string first, string last, int age); //constructor -> acquire resources
+        
+        //  default constructor -> to allow user to create an empty instance
+        //  the default keyword asks the complier to generate a default implementation
+        // Person()=default; 
+        Person(); 
+        //destructor-> release resources
+        ~Person();
+};
+
